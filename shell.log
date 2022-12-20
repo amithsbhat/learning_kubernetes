@@ -1,0 +1,91 @@
+PS C:\Users\bhata> cd C:\Users\bhata\Home\AlgoDSPractice\flask_kub
+PS C:\Users\bhata\Home\AlgoDSPractice\flask_kub> python - version
+Python 3.9.0 (tags/v3.9.0:9cf6752, Oct  5 2020, 15:34:40) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> quit()
+PS C:\Users\bhata\Home\AlgoDSPractice\flask_kub> docker build -t flask_kub . 
+[+] Building 9.7s (10/10) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                           0.0s
+ => => transferring dockerfile: 164B                                                                                                           0.0s
+ => [internal] load .dockerignore                                                                                                              0.0s
+ => => transferring context: 2B                                                                                                                0.0s
+ => [internal] load metadata for docker.io/library/python:3.9                                                                                  2.1s
+ => CACHED [1/5] FROM docker.io/library/python:3.9@sha256:929da7c4e1285e844e70e901267059f63ea958778695a867111a77eaf09700ff                     0.0s
+ => [internal] load build context                                                                                                              0.0s
+ => => transferring context: 1.14kB                                                                                                            0.0s
+ => [2/5] RUN mkdir /app                                                                                                                       0.7s
+ => [3/5] WORKDIR /app/                                                                                                                        0.0s
+ => [4/5] ADD . /app/                                                                                                                          0.0s
+ => [5/5] RUN pip install -r requirements.txt                                                                                                  6.5s
+ => exporting to image                                                                                                                         0.2s
+ => => exporting layers                                                                                                                        0.2s
+ => => writing image sha256:a60421e22dbf07d2a33b0deae7a43ddefbe81956f5a5181e3947ce4bae70d31b                                                   0.0s
+ => => naming to docker.io/library/flask_kub                                                                                                   0.0s
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+PS C:\Users\bhata\Home\AlgoDSPractice\flask_kub> docker images
+could be made because the target machine actively refused it.
+PS C:\Users\bhata\Home\AlgoDSPractice\flask_kub> kubectl apply -f deployment.yaml
+Unable to connect to the server: dial tcp [::1]:8080: connectex: No connection could be made because the target machine actively refused it.        
+PS C:\Users\bhata\Home\AlgoDSPractice\flask_kub> kubectl apply -f deployment.yaml
+service/flask-test-service created
+deployment.apps/flask-test-app created
+PS C:\Users\bhata\Home\AlgoDSPractice\flask_kub> minikube dashboard
+minikube : The term 'minikube' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ minikube dashboard
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (minikube:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\bhata\Home\AlgoDSPractice\flask_kub> minikube dashboard
+minikube : The term 'minikube' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ minikube dashboard
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (minikube:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\bhata\Home\AlgoDSPractice\flask_kub> minikube dashboard
+minikube : The term 'minikube' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ minikube dashboard
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (minikube:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\bhata\Home\AlgoDSPractice\flask_kub> minikube dashboard                                                                                 minikube : The term 'minikube' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ minikube dashboard
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (minikube:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\bhata\Home\AlgoDSPractice\flask_kub> minikube dashboardminikube : The term 'minikube' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the     
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ minikube dashboard
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (minikube:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\bhata\Home\AlgoDSPractice\flask_kub> kubectl apply -f deployment.yaml
+service/flask-test-service created
+deployment.apps/flask-test-app created
+PS C:\Users\bhata\Home\AlgoDSPractice\flask_kub> minikube dashboard
+minikube : The term 'minikube' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ minikube dashboard
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (minikube:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\bhata\Home\AlgoDSPractice\flask_kub> 
+ *  History restored 
+
+PS C:\Users\bhata>
